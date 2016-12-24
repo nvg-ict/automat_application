@@ -10,6 +10,8 @@
 
 #include "boost/filesystem.hpp"   // includes all needed Boost.Filesystem declarations
 
+typedef boost::filesystem::recursive_directory_iterator iterator;
+
 namespace Iteration
 {
 
@@ -21,25 +23,6 @@ public:
 	virtual ~DirectoryIteration();
 	void iterateDirectories();
 private:
-	struct recursive_directory_range
-		{
-			typedef boost::filesystem::recursive_directory_iterator iterator;
-			recursive_directory_range(boost::filesystem::path aP) :
-					p(aP)
-			{
-			}
-
-			iterator begin()
-			{
-				return boost::filesystem::recursive_directory_iterator(p);
-			}
-			iterator end()
-			{
-				return boost::filesystem::recursive_directory_iterator();
-			}
-
-			boost::filesystem::path p;
-		};
 	boost::filesystem::path location;
 };
 

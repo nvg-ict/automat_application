@@ -23,7 +23,7 @@ DirectoryIteration::~DirectoryIteration()
 
 void DirectoryIteration::iterateDirectories()
 {
-for (auto it : recursive_directory_range(location))
+for (auto it : boost::filesystem::recursive_directory_iterator(location))
 	{
 		//std::cout << it << std::endl;
 
