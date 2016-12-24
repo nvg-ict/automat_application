@@ -10,9 +10,11 @@
 
 #include "boost/filesystem.hpp"   // includes all needed Boost.Filesystem declarations
 
+#include "FileParsing.hpp"
+
 typedef boost::filesystem::recursive_directory_iterator iterator;
 
-namespace Iteration
+namespace Input
 {
 
 class DirectoryIteration
@@ -24,6 +26,8 @@ public:
 	void iterateDirectories();
 private:
 	boost::filesystem::path location;
+	std::set<std::string> matfiles;
+	FileParsing file;
 };
 
 } /* namespace Iteration */
