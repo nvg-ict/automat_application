@@ -1,0 +1,13 @@
+##############
+##TEST FILES##
+##############
+
+Currently contains:
+These are the files used for the first test runs.
+The b737.pmd has all it's automat files available.
+
+The other pmd files are not checked, probably have a few files missing.
+
+##################
+##TEST REVISIONS##
+##################

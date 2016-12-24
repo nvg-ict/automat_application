@@ -1,0 +1,3 @@
+material : "eut2.shadowonly.fx" {
+	shadow_bias : 0
+}
