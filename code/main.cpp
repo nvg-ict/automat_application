@@ -6,18 +6,18 @@
  */
 
 #include <iostream>               // for std::cout
-#include "DirectoryIteration.hpp"
 #include <regex>
 #include <string>
 #include <set>
+#include "Collector.hpp"
 
 int main(int argc, char **argv)
 {
 	try {
 
 		std::cout << "Program has started" << std::endl;
-		Input::DirectoryIteration d;
-		d.iterateDirectories();
+		Input::Collector c;
+		c.iterateDirectories();
 
 
 

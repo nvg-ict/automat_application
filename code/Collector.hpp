@@ -5,8 +5,8 @@
  *      Author: Nico
  */
 
-#ifndef CODE_DIRECTORYITERATION_HPP_
-#define CODE_DIRECTORYITERATION_HPP_
+#ifndef CODE_COLLECTOR_HPP_
+#define CODE_COLLECTOR_HPP_
 
 #include "boost/filesystem.hpp"   // includes all needed Boost.Filesystem declarations
 
@@ -17,19 +17,20 @@ typedef boost::filesystem::recursive_directory_iterator iterator;
 namespace Input
 {
 
-class DirectoryIteration
+class Collector
 {
 public:
 
-	DirectoryIteration();
-	virtual ~DirectoryIteration();
+	Collector();
+	virtual ~Collector();
 	void iterateDirectories();
+	const std::set<boost::filesystem::path> parseFile(boost::filesystem::path location);
 private:
 	boost::filesystem::path location;
-	std::set<std::string> matfiles;
-	FileParsing file;
+	std::set<boost::filesystem::path> matfiles;
+	//const std::set<boost::filesystem::path> parseFile(boost::filesystem::path location);
 };
 
 } /* namespace Iteration */
 
-#endif /* CODE_DIRECTORYITERATION_HPP_ */
+#endif /* CODE_COLLECTOR_HPP_ */
