@@ -6,8 +6,10 @@
  */
 
 #include "Collector.hpp"
+#include "Logger.hpp"
 
 #include <iostream>               // for std::cout
+#include <regex>
 
 namespace Input
 {
@@ -45,6 +47,7 @@ void Collector::iterateDirectories()
 	std::cout<<"show the set"<<std::endl;
 	for(boost::filesystem::path s: matfiles)
 	{
+		Logger::Logger::getLogger().log(s.string());
 		std::cout<<s.string()<<std::endl;
 	}
 }

@@ -10,6 +10,7 @@
 #include <string>
 #include <set>
 #include "Collector.hpp"
+#include "Logger.hpp"
 
 int main(int argc, char **argv)
 {
@@ -20,7 +21,7 @@ int main(int argc, char **argv)
 		c.iterateDirectories();
 
 
-
+		while(!Logger::Logger::getLogger().isDone());
 		return 0;
 	} catch (std::exception& e) {
 		std::cout <<e.what() << std::endl;

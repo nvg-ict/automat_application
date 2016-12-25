@@ -9,8 +9,7 @@
 #define CODE_COLLECTOR_HPP_
 
 #include "boost/filesystem.hpp"   // includes all needed Boost.Filesystem declarations
-
-#include "FileParsing.hpp"
+#include <set>
 
 typedef boost::filesystem::recursive_directory_iterator iterator;
 
@@ -28,7 +27,6 @@ public:
 private:
 	boost::filesystem::path location;
 	std::set<boost::filesystem::path> matfiles;
-	//const std::set<boost::filesystem::path> parseFile(boost::filesystem::path location);
 };
 
 } /* namespace Iteration */
