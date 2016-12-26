@@ -6,7 +6,6 @@
  */
 
 #include "LogToFile.hpp"
-#include "iostream"
 
 namespace Logger
 {

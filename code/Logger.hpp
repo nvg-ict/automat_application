@@ -11,6 +11,8 @@
 #include "LogToFile.hpp"
 #include "Queue.hpp"
 
+#include "boost/filesystem.hpp"
+
 namespace Logger
 {
 class Logger
@@ -39,6 +41,7 @@ public:
 	 * @param logTime An bool that tells if the time needs to be logged
 	 */
 	void log(const unsigned long logMessage);
+	void log(const boost::filesystem::path& logMessage);
 	/**
 	 * @brief Function that returns a boolean judging if the logger is ready.
 	 * @return True if the logger is done logging all the data.

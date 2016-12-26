@@ -14,8 +14,7 @@
 namespace Input
 {
 
-Collector::Collector() :
-		location("C:\\Users\\nicov\\Documents\\AutomatApp\\test_data")
+Collector::Collector()
 {
 }
 
@@ -23,33 +22,36 @@ Collector::~Collector()
 {
 }
 
-void Collector::iterateDirectories()
+const std::set<boost::filesystem::path> Collector::iterateDirectories()
 {
-	for (auto it : boost::filesystem::recursive_directory_iterator(location))
+	std::set<boost::filesystem::path> matFiles;
+	for (auto it : boost::filesystem::recursive_directory_iterator(boost::filesystem::current_path()))
 	{
 		//std::cout << it << std::endl;
 		if (boost::filesystem::is_regular_file(it))        // is p a regular file?
 		{
-			std::cout << it << " size is " << boost::filesystem::file_size(it) << '\n';
+			//std::cout << it << " size is " << boost::filesystem::file_size(it) << '\n';
 			if (boost::filesystem::extension(it) == ".pmd")
 			{
 				std::cout << "PMD FOUND" << std::endl;
 				std::set<boost::filesystem::path> temp = parseFile(it);
-				matfiles.insert(temp.begin(),temp.end());
+				matFiles.insert(temp.begin(),temp.end());
 			}
 		}
-		else if (boost::filesystem::is_directory(it))      // is p a directory?
-			std::cout << it << "is a directory\n";
 		else
-			std::cout << it << "exists, but is neither a regular file nor a directory\n";
+		{
+			std::cout << it << "We don't need this\n";
+		}
 	}
 
 	std::cout<<"show the set"<<std::endl;
-	for(boost::filesystem::path s: matfiles)
+	for(boost::filesystem::path s: matFiles)
 	{
-		Logger::Logger::getLogger().log(s.string());
+		Logger::Logger::getLogger().log(s);
 		std::cout<<s.string()<<std::endl;
 	}
+
+	return matFiles;
 }
 
 const std::set<boost::filesystem::path> Collector::parseFile(boost::filesystem::path location)

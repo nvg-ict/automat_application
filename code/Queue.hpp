@@ -10,11 +10,7 @@
 
 #include <queue>
 #include <string>
-#include <mutex>
-#include <condition_variable>
-
 #include <iostream>
-#include <thread>
 
 template <class T>
 class Queue
@@ -50,28 +46,19 @@ public:
 
 private:
 	std::queue<T> queue;
-	std::mutex queueBusy;
-	std::condition_variable queueFull;
 };
 
 template<class T>
 inline void Queue<T>::enqueue(T t)
 {
-	//std::unique_lock<std::mutex> lock(queueBusy);
 	queue.push(t);
-	//queueFull.notify_one();
 }
 
 template<class T>
 inline T Queue<T>::dequeue()
 {
-	//std::unique_lock<std::mutex> lock(queueBusy);
-
-	//while (queue.size()==0) queueFull.wait(lock);  //lock op de queue. Wanneer notify_one() wordt aangeroepen wordt de queueFull getriggered
-
 	T front = queue.front();
 	queue.pop();
-	std::cout<<"Dequeue: "<<front<<std::endl;
 	return front;
 }
 

@@ -7,6 +7,7 @@
 
 #include "Logger.hpp"
 #include "LogToFile.hpp"
+
 #include <iostream>
 #include <thread>
 
@@ -38,6 +39,11 @@ void Logger::log(const std::string& logMessage)
 void Logger::log(const unsigned long logMessage)
 {
 	queue.enqueue(std::to_string(logMessage));
+}
+
+void Logger::log(const boost::filesystem::path& logMessage)
+{
+	queue.enqueue(logMessage.string());
 }
 
 Logger& Logger::getLogger()

@@ -19,14 +19,12 @@ namespace Input
 class Collector
 {
 public:
-
 	Collector();
 	virtual ~Collector();
-	void iterateDirectories();
+	const std::set<boost::filesystem::path> iterateDirectories();
 	const std::set<boost::filesystem::path> parseFile(boost::filesystem::path location);
 private:
-	boost::filesystem::path location;
-	std::set<boost::filesystem::path> matfiles;
+	std::set<boost::filesystem::path> matFiles;
 };
 
 } /* namespace Iteration */
