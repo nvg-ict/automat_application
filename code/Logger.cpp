@@ -16,8 +16,8 @@ Logger::Logger() :
 		output(LogToFile("output"))
 {
 	output.connect();
-	std::thread t(&Logger::writeToLogOutput, this);
-	t.detach();
+	//std::thread t(&Logger::writeToLogOutput, this);
+	//t.detach();
 }
 
 Logger::~Logger()

@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		c.iterateDirectories();
 
 
-		while(!Logger::Logger::getLogger().isDone());
+		Logger::Logger::getLogger().writeToLogOutput();
 		return 0;
 	} catch (std::exception& e) {
 		std::cout <<e.what() << std::endl;

@@ -57,17 +57,17 @@ private:
 template<class T>
 inline void Queue<T>::enqueue(T t)
 {
-	std::unique_lock<std::mutex> lock(queueBusy);
+	//std::unique_lock<std::mutex> lock(queueBusy);
 	queue.push(t);
-	queueFull.notify_one();
+	//queueFull.notify_one();
 }
 
 template<class T>
 inline T Queue<T>::dequeue()
 {
-	std::unique_lock<std::mutex> lock(queueBusy);
+	//std::unique_lock<std::mutex> lock(queueBusy);
 
-	while (queue.size()==0) queueFull.wait(lock);  //lock op de queue. Wanneer notify_one() wordt aangeroepen wordt de queueFull getriggered
+	//while (queue.size()==0) queueFull.wait(lock);  //lock op de queue. Wanneer notify_one() wordt aangeroepen wordt de queueFull getriggered
 
 	T front = queue.front();
 	queue.pop();
