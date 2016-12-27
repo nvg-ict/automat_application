@@ -16,20 +16,10 @@ namespace Copy
 Mover::Mover(boost::filesystem::path anExport) :
 		exportDirectory(anExport)
 {
-	// TODO Auto-generated constructor stub
 }
 
 Mover::~Mover()
 {
-	// TODO Auto-generated destructor stub
-}
-
-boost::filesystem::path Mover::destination(boost::filesystem::path path)
-{
-	boost::filesystem::path fullPath = exportDirectory;
-	fullPath /= path;
-	std::cout << "Destination: " << fullPath.string() << std::endl;
-	return fullPath;
 }
 
 bool Mover::checkIfMatPresent(boost::filesystem::path path)
@@ -38,7 +28,7 @@ bool Mover::checkIfMatPresent(boost::filesystem::path path)
 	return boost::filesystem::exists(path);
 }
 
-void Mover::copyFile(boost::filesystem::path path)
+bool Mover::copyFile(boost::filesystem::path path)
 {
 	boost::filesystem::path root = createRootPath(path);
 	boost::filesystem::path newLocation = createNewLocationPath(path);
@@ -54,14 +44,17 @@ void Mover::copyFile(boost::filesystem::path path)
 		try
 		{
 			boost::filesystem::copy_file(root, newLocation, boost::filesystem::copy_option::overwrite_if_exists);
+			return true;
 		} catch (const boost::filesystem::filesystem_error& ex)
 		{
 			std::cout << ex.what() << '\n';
+			return false;
 		}
 	}
 	else
 	{
 		std::cout << "MAT not present" << std::endl;
+		return false;
 	}
 }
 
@@ -95,10 +88,3 @@ boost::filesystem::path Mover::createExportDirectory(const boost::filesystem::pa
 }
 
 } /* namespace Copy */
-
-/*
- fs::path dir ("/tmp");
- fs::path file ("foo.txt");
- fs::path full_path = dir / file;
- std::cout << full_path << std::endl;
- */

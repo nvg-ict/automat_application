@@ -14,13 +14,10 @@ namespace Application
 MainApp::MainApp(boost::filesystem::path anExport) :
 		c(), m(anExport)
 {
-	// TODO Auto-generated constructor stub
-
 }
 
 MainApp::~MainApp()
 {
-	// TODO Auto-generated destructor stub
 }
 
 void MainApp::runModFolder()
@@ -29,10 +26,21 @@ void MainApp::runModFolder()
 
 	std::cout<<"Size: "<<matFiles.size()<<std::endl;
 
-	for(boost::filesystem::path p :matFiles)
-	{
-		m.copyFile(p);
+	iterateMatFile();
+}
+
+void MainApp::iterateMatFile()
+{
+	std::set<boost::filesystem::path>::iterator it;
+	for (it = matFiles.begin(); it != matFiles.end(); ) {
+	    if (m.copyFile(*it)) {
+	        it = matFiles.erase(it);
+	    }
+	    else {
+	        ++it;
+	    }
 	}
+	std::cout<<"Size of matfiles: "<<matFiles.size()<<std::endl;
 }
 
 

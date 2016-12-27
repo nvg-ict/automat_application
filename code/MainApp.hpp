@@ -22,6 +22,7 @@ public:
 	virtual ~MainApp();
 	void runModFolder();
 private:
+	void iterateMatFile();
 	Input::Collector c;
 	Copy::Mover m;
 	std::set<boost::filesystem::path> matFiles;
