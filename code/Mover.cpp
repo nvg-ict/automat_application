@@ -6,8 +6,9 @@
  */
 
 #include "Mover.hpp"
-#include <algorithm>
+#include "Logger.hpp"
 
+#include <algorithm>
 #include <iostream>
 
 namespace Copy
@@ -44,9 +45,11 @@ bool Mover::copyFile(boost::filesystem::path path)
 		try
 		{
 			boost::filesystem::copy_file(root, newLocation, boost::filesystem::copy_option::overwrite_if_exists);
+			Logger::Logger::getLogger().log(std::string("Lets add some errors, because we can"),true);
 			return true;
 		} catch (const boost::filesystem::filesystem_error& ex)
 		{
+			Logger::Logger::getLogger().log(std::string(ex.what()),true);
 			std::cout << ex.what() << '\n';
 			return false;
 		}

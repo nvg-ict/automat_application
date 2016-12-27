@@ -8,6 +8,7 @@
 #include "Collector.hpp"
 #include "Logger.hpp"
 #include "MainApp.hpp"
+#include "AppTimer.hpp"
 
 #include <iostream>               // for std::cout
 #include <regex>
@@ -16,8 +17,15 @@
 #include "boost/filesystem.hpp"
 
 
+#include <chrono>
+#include <thread>
+
+
 int main(int argc, char **argv)
 {
+	//This must be the first function the programm calls
+	Time::AppTimer::getTimer().init();
+
 	try {
 		boost::filesystem::path exportDirectory;
 		   std::cout << "Have " << argc << " arguments:" << std::endl;

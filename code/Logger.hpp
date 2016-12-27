@@ -10,6 +10,7 @@
 
 #include "LogToFile.hpp"
 #include "Queue.hpp"
+#include "AppTimer.hpp"
 
 #include "boost/filesystem.hpp"
 
@@ -34,14 +35,15 @@ public:
 	 * @param logMessage String that contains the information that has to be logged
 	 * @param logTime Boolean that tells to log the time or not.
 	 */
-	void log(const std::string& logMessage);
+	void log(const std::string& logMessage, bool time = false);
 	/**
 	 * @brief Function for logging an integer value
 	 * @param logMessage An integer value that needs to be logged
 	 * @param logTime An bool that tells if the time needs to be logged
 	 */
-	void log(const unsigned long logMessage);
-	void log(const boost::filesystem::path& logMessage);
+	void log(const unsigned long logMessage, bool time = false);
+	void log(const boost::filesystem::path& logMessage, bool time = false);
+	const bool isErrorLogDone() const;
 	/**
 	 * @brief Function that returns a boolean judging if the logger is ready.
 	 * @return True if the logger is done logging all the data.
@@ -54,6 +56,7 @@ private:
 	 */
 	Logger();
 	Queue<std::string> queue;
+	Queue<std::string> errorQueue;
 	LogToFile output;
 	//GETTERS, SETTERS and OPERATORS
 	const Logger& operator=(const Logger& aLogger);

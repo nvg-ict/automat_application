@@ -32,25 +32,12 @@ const std::set<boost::filesystem::path> Collector::iterateDirectories()
 		{
 			//std::cout << it << " size is " << boost::filesystem::file_size(it) << '\n';
 			if (boost::filesystem::extension(it) == ".pmd")
-			{
-				std::cout << "PMD FOUND" << std::endl;
-				std::set<boost::filesystem::path> temp = parseFile(it);
+			{				std::set<boost::filesystem::path> temp = parseFile(it);
 				matFiles.insert(temp.begin(),temp.end());
 			}
 		}
-		else
-		{
-			std::cout << it << "We don't need this\n";
-		}
-	}
 
-	std::cout<<"show the set"<<std::endl;
-	for(boost::filesystem::path s: matFiles)
-	{
-		Logger::Logger::getLogger().log(s);
-		std::cout<<s.string()<<std::endl;
 	}
-
 	return matFiles;
 }
 

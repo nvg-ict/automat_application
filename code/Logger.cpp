@@ -31,19 +31,28 @@ const Logger& Logger::operator=(const Logger& aLogger)
 	return *this;
 }
 
-void Logger::log(const std::string& logMessage)
+void Logger::log(const std::string& logMessage, bool time/*=false*/)
 {
-	queue.enqueue(logMessage);
+	if (time)
+		errorQueue.enqueue(Time::AppTimer::getTimer().getTime() + logMessage);
+	else
+		queue.enqueue(logMessage);
 }
 
-void Logger::log(const unsigned long logMessage)
+void Logger::log(const unsigned long logMessage, bool time/*=false*/)
 {
-	queue.enqueue(std::to_string(logMessage));
+	if (time)
+		errorQueue.enqueue(Time::AppTimer::getTimer().getTime() + std::to_string(logMessage));
+	else
+		queue.enqueue(std::to_string(logMessage));
 }
 
-void Logger::log(const boost::filesystem::path& logMessage)
+void Logger::log(const boost::filesystem::path& logMessage, bool time/*=false*/)
 {
-	queue.enqueue(logMessage.string());
+	if (time)
+		errorQueue.enqueue(Time::AppTimer::getTimer().getTime() + logMessage.string());
+	else
+		queue.enqueue(logMessage.string());
 }
 
 Logger& Logger::getLogger()
@@ -54,10 +63,18 @@ Logger& Logger::getLogger()
 
 void Logger::writeToLogOutput()
 {
-	while (!isDone())
+	if (!errorQueue.empty())
 	{
-		output.log(queue.dequeue());
+		output.log("The following errors occured: ");
+		while (!isErrorLogDone()) output.log(errorQueue.dequeue());
+		output.log("\n");
 	}
+	while (!isDone()) output.log(queue.dequeue());
+}
+
+const bool Logger::isErrorLogDone() const
+{
+	return errorQueue.getQueueSize() == 0;
 }
 
 const bool Logger::isDone() const
