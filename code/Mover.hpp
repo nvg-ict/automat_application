@@ -18,6 +18,7 @@ class Mover
 public:
 	Mover(boost::filesystem::path anExport);
 	virtual ~Mover();
+	bool checkIfMatPresent(boost::filesystem::path path);
 	void copyFile(boost::filesystem::path path);
 	boost::filesystem::path destination(boost::filesystem::path path);
 private:

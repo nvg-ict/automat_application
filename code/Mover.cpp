@@ -6,6 +6,7 @@
  */
 
 #include "Mover.hpp"
+#include <algorithm>
 
 #include <iostream>
 
@@ -44,6 +45,12 @@ boost::filesystem::path Mover::destination(boost::filesystem::path path)
  }
  }
  */
+
+bool Mover::checkIfMatPresent(boost::filesystem::path path) {
+	std::cout<<path.string()<<std::endl;
+	return boost::filesystem::exists(path);
+}
+
 void Mover::copyFile(boost::filesystem::path path)
 {
 	boost::filesystem::path root = boost::filesystem::current_path();
@@ -51,23 +58,39 @@ void Mover::copyFile(boost::filesystem::path path)
 	boost::filesystem::path createDirectory;
 
 	createDirectory /= exportDirectory;
-	createDirectory		/= path;
+	createDirectory /= path;
 	root /= path;
 	newLocation /= exportDirectory;
 	newLocation /= path;
 
-	std::cout<<"Create path: "<<createDirectory.parent_path()<<std::endl;
-	std::cout<<"Root path: "<<root<<std::endl;
-	std::cout<<"New Location path: "<<newLocation<<std::endl;
+	std::cout << "Create path: " << createDirectory.parent_path() << std::endl;
+	std::cout << "Root path: " << root << std::endl;
+	std::cout << "New Location path: " << newLocation << std::endl;
 
-	if (boost::filesystem::create_directories(createDirectory.parent_path()))
+	std::string rootS = root.string();
+	std::string newLocationS = newLocation.string();
+	std::replace(rootS.begin(), rootS.end(), '/', '\\'); // replace all 'x' to 'y'
+	std::replace(newLocationS.begin(), newLocationS.end(), '/', '\\'); // replace all 'x' to 'y'
+
+	if(checkIfMatPresent(rootS)) {
+
+
+	boost::filesystem::create_directories(createDirectory.parent_path());
+	try
 	{
-		boost::filesystem::copy_file(root, newLocation, boost::filesystem::copy_option::overwrite_if_exists);
+		//boost::system::error_code error;
+		boost::filesystem::copy_file(rootS, newLocationS, boost::filesystem::copy_option::overwrite_if_exists);
+	} catch (const boost::filesystem::filesystem_error& ex)
+	{
+		std::cout << ex.path1() << std::endl;
+		std::cout << "123: " << ex.what() << '\n';
+	}
 	}
 	else {
-		std::cout<<"Directory creating failed"<<std::endl;
+		std::cout<<"MAT not present"<<std::endl;
 	}
 }
+
 } /* namespace Copy */
 
 /*
