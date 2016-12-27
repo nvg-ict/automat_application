@@ -22,6 +22,9 @@ public:
 	void copyFile(boost::filesystem::path path);
 	boost::filesystem::path destination(boost::filesystem::path path);
 private:
+	boost::filesystem::path createRootPath(const boost::filesystem::path& path);
+	boost::filesystem::path createNewLocationPath(const boost::filesystem::path& path);
+	boost::filesystem::path createExportDirectory(const boost::filesystem::path& path);
 	const boost::filesystem::path exportDirectory;
 };
 
