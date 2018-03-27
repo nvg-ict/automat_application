@@ -16,7 +16,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace AutomatApp
 {
     /// <summary>
@@ -61,13 +60,9 @@ namespace AutomatApp
 
         private void OpenFileCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "PMD files (*.pmd)|*.pmd";
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            if (openFileDialog.ShowDialog() == true)
-            {
-                FileReader.ReadFile(openFileDialog.FileName);
-            }
+            OneFileMatManager m = new OneFileMatManager();
+            m.CollectFile();
+            m.Execute();
         }
 
         private void OpenDirCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -77,7 +72,16 @@ namespace AutomatApp
 
         private void OpenDirCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            Console.WriteLine("Succes");
+            MultipleFileMatManager m = new MultipleFileMatManager();
+            m.CollectFiles();
+            m.Execute();
+            //foreach(var i in DirectoryManager.GetAllFilesFromThisDir())
+            //{
+            //    Console.WriteLine(i);
+            //    FileReader.ReadFile(i);
+            //}
+            //string s = DirectoryManager.GetDirectoryPath();
+            //Console.WriteLine(MatList.Size);
         }
 
         private void SettingCommand_Executed(object sender, ExecutedRoutedEventArgs e)
@@ -125,15 +129,11 @@ namespace AutomatApp
             //}
         }
 
-
-
         private void btnExectute_Click(object sender, RoutedEventArgs e)
         {
             FileReader reader = new FileReader();
             //reader.ReadFile(lbFiles.SelectedItem.ToString());
             // lbFiles.SelectedItem;
         }
-
-       
     }
 }

@@ -64,6 +64,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -84,6 +85,7 @@
     </ApplicationDefinition>
     <Compile Include="MatFunctions\DirectoryManager.cs" />
     <Compile Include="MatFunctions\MatList.cs" />
+    <Compile Include="MatFunctions\MatManager.cs" />
     <Compile Include="UserControls\DragnDrop.xaml.cs">
       <DependentUpon>DragnDrop.xaml</DependentUpon>
     </Compile>

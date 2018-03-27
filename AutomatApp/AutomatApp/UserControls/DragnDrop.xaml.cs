@@ -50,10 +50,10 @@ namespace AutomatApp.UserControls
                     FileReader.ReadFile(file);
                 }
 
-                foreach (var n in MatList.MatFiles)
-                {
-                    Console.WriteLine(MatList.Size);
-                }
+                //foreach (var n in MatList.MatFiles.Collection)
+                //{
+                //    Console.WriteLine(MatList.Size);
+                //}
             }
         }
     }
