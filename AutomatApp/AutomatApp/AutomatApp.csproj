@@ -82,6 +82,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MatFunctions\DirectoryManager.cs" />
     <Compile Include="MatFunctions\MatList.cs" />
     <Compile Include="UserControls\DragnDrop.xaml.cs">
       <DependentUpon>DragnDrop.xaml</DependentUpon>

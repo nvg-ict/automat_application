@@ -15,7 +15,7 @@
         <CommandBinding Command="cmd:CustomCommands.OpenFile" CanExecute="OpenFileCommand_CanExecute" Executed="OpenFileCommand_Executed" />
         <CommandBinding Command="cmd:CustomCommands.OpenDir" CanExecute="OpenDirCommand_CanExecute" Executed="OpenDirCommand_Executed" />
         <CommandBinding Command="cmd:CustomCommands.SetMatDir" CanExecute="OpenDirCommand_CanExecute" Executed="OpenDirCommand_Executed" />
-        <CommandBinding Command="cmd:CustomCommands.SetExportDirectory" CanExecute="OpenDirCommand_CanExecute" Executed="OpenDirCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.SetExportDirectory" CanExecute="OpenDirCommand_CanExecute" Executed="ExportDirCommand_Executed" />
         <CommandBinding Command="cmd:CustomCommands.Settings" CanExecute="OpenDirCommand_CanExecute" Executed="SettingCommand_Executed" />
     </Window.CommandBindings>
     

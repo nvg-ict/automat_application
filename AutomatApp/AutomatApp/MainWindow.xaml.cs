@@ -60,7 +60,13 @@ namespace AutomatApp
 
         private void OpenFileCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            Console.WriteLine("Succes");
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "PMD files (*.pmd)|*.pmd";
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            if (openFileDialog.ShowDialog() == true)
+            {
+                FileReader.ReadFile(openFileDialog.FileName);
+            }
         }
 
         private void OpenDirCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -81,6 +87,10 @@ namespace AutomatApp
             window.ShowDialog();
         }
 
+        private void ExportDirCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            Console.WriteLine("Succes");
+        }
 
 
         //TRIAL AND ERROR CODE!!
