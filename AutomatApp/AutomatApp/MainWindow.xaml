@@ -23,23 +23,47 @@
     <DockPanel Margin="10,0,10,10" LastChildFill="True">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
-                <MenuItem Command="cmd:CustomCommands.OpenFile" />
-                <MenuItem Command="cmd:CustomCommands.OpenDir" />
+                <MenuItem Command="cmd:CustomCommands.OpenFile">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/FileIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Command="cmd:CustomCommands.OpenDir">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/FolderIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
                 <Separator/>
-                <MenuItem Command="cmd:CustomCommands.Exit" />
+                <MenuItem Command="cmd:CustomCommands.Exit">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/ExitIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="Settings">
-                <MenuItem Command="cmd:CustomCommands.SetWorkingDir" IsCheckable="true"/>
-                <MenuItem Command="cmd:CustomCommands.SetMatDir" IsCheckable="true"/>
-                <MenuItem Command="cmd:CustomCommands.SetExportDirectory" IsCheckable="true"/>
+                <MenuItem Command="cmd:CustomCommands.SetWorkingDir" IsCheckable="true">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/DownloadIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Command="cmd:CustomCommands.SetMatDir" IsCheckable="true">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/HardDIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Command="cmd:CustomCommands.SetExportDirectory" IsCheckable="true">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/UploadIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
                 <Separator/>
-                <MenuItem Command="cmd:CustomCommands.Settings"/>
+                <MenuItem Command="cmd:CustomCommands.Settings" IsCheckable="true">
+                    <MenuItem.Icon>
+                        <Image Source="/AutomatApp;component/Images/SettingsIcon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
         </Menu>
-        <Grid Name="MainContent"/>
-
-
-
-        <!--<usr:DragnDrop DockPanel.Dock="Top" />-->
+        <usr:DragnDrop DockPanel.Dock="Top" />
     </DockPanel>
 </Window>

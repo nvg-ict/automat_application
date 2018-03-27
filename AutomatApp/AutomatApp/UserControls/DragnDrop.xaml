@@ -8,10 +8,17 @@
              mc:Ignorable="d" 
              x:Name="_this" >
     <DockPanel>
-        <ListView DockPanel.Dock="Top"
+        <Label DockPanel.Dock="Top">Drop any .pmd files to be used</Label>
+        <ListView DockPanel.Dock="Bottom"
             x:Name="DropList" 
           Drop="DropList_Drop" 
           DragEnter="DropList_DragEnter" 
-          AllowDrop="True"/>
+          AllowDrop="True">
+            <ListView.Background>
+                <ImageBrush Stretch="None" AlignmentY="Center" 
+                        AlignmentX="Center" ImageSource="/AutomatApp;component/Images/DropIcon.png"/>
+            </ListView.Background>
+            <!--<Image Source="/AutomatApp;component/Images/DropIcon.png" Width="50" IsEnabled="False" IsManipulationEnabled="False"/>-->
+        </ListView>
     </DockPanel>
 </UserControl>

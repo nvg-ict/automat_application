@@ -176,7 +176,21 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Resource Include="Images\DropIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DownloadIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ExitIcon.png" />
+    <Resource Include="Images\FileIcon.png" />
+    <Resource Include="Images\FolderIcon.png" />
+    <Resource Include="Images\HardDIcon.png" />
+    <Resource Include="Images\HelpIcon.png" />
+    <Resource Include="Images\InfoIcon.png" />
+    <Resource Include="Images\SettingsIcon.png" />
+    <Resource Include="Images\Source.txt" />
+    <Resource Include="Images\UploadIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,9 +63,10 @@ namespace AutomatApp
             OneFileMatManager m = new OneFileMatManager();
             m.CollectFile();
             m.Execute();
-            MainContent.Children.Clear();
             UserControls.OpenOneFile OOF = new UserControls.OpenOneFile(m.SizeMatPaths);
-            MainContent.Children.Add(OOF);
+            CustomDialog window = new CustomDialog(OOF);
+            window.Owner = this;
+            window.ShowDialog();
         }
 
         private void OpenDirCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -78,20 +79,10 @@ namespace AutomatApp
             MultipleFileMatManager m = new MultipleFileMatManager();
             m.CollectFiles();
             m.Execute();
-           // MainContent.Children.Clear();
             UserControls.MultipleFile MF = new UserControls.MultipleFile(m.SizeFilePaths,m.SizeMatPaths);
-            //MainContent.Children.Add(MF);
-
             CustomDialog window = new CustomDialog(MF);
             window.Owner = this;
             window.ShowDialog();
-            //foreach(var i in DirectoryManager.GetAllFilesFromThisDir())
-            //{
-            //    Console.WriteLine(i);
-            //    FileReader.ReadFile(i);
-            //}
-            //string s = DirectoryManager.GetDirectoryPath();
-            //Console.WriteLine(MatList.Size);
         }
 
         private void SettingCommand_Executed(object sender, ExecutedRoutedEventArgs e)
