@@ -1,0 +1,11 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/vehicle/wheel/opel_insignia/wheel.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 0.2 , 0.2 , 0.2 }
+	specular : { 0.6 , 0.6 , 0.6 }
+	shininess : 40
+	add_ambient : 0
+
+}

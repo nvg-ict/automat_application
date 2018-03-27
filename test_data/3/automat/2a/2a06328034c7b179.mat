@@ -1,0 +1,13 @@
+material : "eut2.dif.spec.add.env.nofresnel.shadow.rfx" {
+	texture[0] : "/material/tiled/stripes_01.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 60
+	specular : { 1 , 1 , 1 }
+}

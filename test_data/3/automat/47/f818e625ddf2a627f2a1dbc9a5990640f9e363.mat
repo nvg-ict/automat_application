@@ -1,0 +1,10 @@
+material : "eut2.building.day" {
+	texture[0] : "/model/railing/tunnel/city_tunel.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.211765 , 0.211765 , 0.211765 }
+	specular : { 1 , 1 , 1 }
+	shininess : 35
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

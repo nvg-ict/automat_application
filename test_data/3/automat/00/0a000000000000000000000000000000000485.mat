@@ -1,0 +1,9 @@
+material : "eut2.dif.lum" {
+	texture[0] : "/material/logo/psa.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.210229 , 0.210229 , 0.210229 }
+	shininess : 30
+	add_ambient : 0
+	reflection : 0
+}

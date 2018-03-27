@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.fx" {
+	texture[0] : "/m0d3l/new_buildings/villa/dom_jednorodzinny_04b.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 0.411766 , 0.411766 , 0.411766 }
+	reflection : 0
+	shininess : 50
+	specular : { 0.403922 , 0.403922 , 0.403922 }
+}

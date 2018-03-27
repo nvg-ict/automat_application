@@ -1,0 +1,5 @@
+material : "eut2.decalshadow" {
+	texture[0] : "/prefab/heavy_factory/ground.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+}

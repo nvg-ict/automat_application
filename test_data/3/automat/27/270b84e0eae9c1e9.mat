@@ -1,0 +1,16 @@
+material : "eut2.dif.spec.fade.dif.spec.tsnmap.rfx" {
+	texture[0] : "/material/rocks/rock_02_nrm_sc.tobj"
+	texture_name[0] : "texture_nmap"
+	texture[1] : "/material/rocks/rock_02_sc.tobj"
+	texture_name[1] : "texture_base"
+	texture[2] : "/material/rocks/rock_02_sc.tobj"
+	texture_name[2] : "texture_detail"
+	texture[3] : "/material/rocks/rock_02_nrm_sc.tobj"
+	texture_name[3] : "texture_nmap_detail"
+	add_ambient : 0
+	aux[5] : { 10 , 200 , 0.6 , 3 }
+	diffuse : { 0.461038 , 0.461038 , 0.461038 }
+	reflection : 0
+	shininess : 75
+	specular : { 0.0390575 , 0.0390575 , 0.0390575 }
+}

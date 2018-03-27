@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.a" {
+	texture[0] : "/material/tiled/metal_alpha_01.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 1 , 1 , 1 }
+	shininess : 65
+	add_ambient : 0
+	reflection : 0.1
+	shadow_bias : 0
+}

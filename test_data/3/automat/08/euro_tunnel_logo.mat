@@ -1,0 +1,10 @@
+material : "eut2.dif.a.decal.over" {
+	texture[0] : "/prefab/eurotunnel/euro_tunnel_logo.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.0901961 , 0.0901961 , 0.0901961 }
+	shininess : 1
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

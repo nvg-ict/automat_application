@@ -1,0 +1,10 @@
+material : "eut2.dif.shadow" {
+	texture[0] : "/model/maeg_vitus/maeg_iron.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.582711 , 0.582711 , 0.582711 }
+	specular : { 0.323032 , 0.323032 , 0.323032 }
+	shininess : 50
+	add_ambient : 0
+	reflection : 0
+	shadow_bias : 0
+}

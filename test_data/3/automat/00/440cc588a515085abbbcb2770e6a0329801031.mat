@@ -1,0 +1,11 @@
+material : "eut2.dif.spec.mult.dif.spec.fx" {
+	texture[0] : "/vehicle/trailer_eu/food_cistern/plain.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/trailer_eu/company/euroacres.tobj"
+	texture_name[1] : "texture_mult"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 35
+	specular : { 0.856128 , 0.856128 , 0.856128 }
+}

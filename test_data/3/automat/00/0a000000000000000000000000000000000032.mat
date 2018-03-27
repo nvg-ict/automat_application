@@ -1,0 +1,9 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/model/sign/traffic/hu/hu_markings.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.956863 , 0.956863 , 0.956863 }
+	shininess : 25
+	aux[1] : { 0 , 0 }
+
+}

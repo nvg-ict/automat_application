@@ -1,0 +1,13 @@
+material : "eut2.dif.spec.add.env" {
+	texture[0] : "/vehicle/ai/promods/road/opel_insignia/lights.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 0.894118 , 0.894118 , 0.894118 }
+	specular : { 0.4 , 0.4 , 0.4 }
+	shininess : 65
+	add_ambient : 0
+	env_factor : { 0.041 , 0.041 , 0.041 }
+	fresnel : { 0.2 , 0.9 }
+
+}

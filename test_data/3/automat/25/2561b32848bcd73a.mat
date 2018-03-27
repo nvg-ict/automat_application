@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.a.rfx" {
+	texture[0] : "/material/tiled/metal_fences_01.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 65
+	specular : { 0.132868 , 0.132868 , 0.132868 }
+}

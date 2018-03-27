@@ -1,0 +1,12 @@
+material : "eut2.dif.spec.add.env" {
+	texture[0] : "/model/skoda_factory/skoda_gate.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/ui_vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.322412 , 0.322412 , 0.322412 }
+	shininess : 50
+	add_ambient : 0
+	reflection : 0
+	env_factor : { 1 , 1 , 1 }
+}

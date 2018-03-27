@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.weight.weight.dif.spec.weight.tg0.rfx" {
+	texture[0] : "/material/terrain/dirt_2_512.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/terrain/concrete.tobj"
+	texture_name[1] : "texture_over"
+	add_ambient : 0
+	aux[0] : { 8 , 8 }
+	aux[3] : { 0.2 , 0.2 , 0.2 , 12 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	reflection2 : 0
+	shininess : 12
+	specular : { 0.0331048 , 0.0331048 , 0.0331048 }
+	substance : "dirt"
+}

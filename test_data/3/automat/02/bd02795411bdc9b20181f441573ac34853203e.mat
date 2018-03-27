@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.decal.rfx" {
+	texture[0] : "/prefab/border/de_at_3/kanal.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 40
+	specular : { 0.318547 , 0.318547 , 0.318547 }
+}

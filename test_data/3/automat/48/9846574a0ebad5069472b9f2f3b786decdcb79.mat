@@ -1,0 +1,10 @@
+material : "eut2.dif.shadow.a" {
+	texture[0] : "/prefab/tollgate/tollgate_a1_poland/color_a1.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0 , 0 , 0 }
+	shininess : 4
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

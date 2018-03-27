@@ -1,0 +1,15 @@
+material : "eut2.lamp.add.env" {
+	texture[0] : "/vehicle/ai/promods/road/dacia_logan/farovi.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/promods/road/dacia_logan/front_lightmask.tobj"
+	texture_name[1] : "texture_mask"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	diffuse : { 0.694118 , 0.694118 , 0.694118 }
+	specular : { 0.0901961 , 0.0901961 , 0.0901961 }
+	shininess : 10
+	add_ambient : 0
+	env_factor : { 0.1 , 0.1 , 0.1 }
+	fresnel : { 0.2 , 0.9 }
+
+}

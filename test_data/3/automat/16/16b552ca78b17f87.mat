@@ -1,0 +1,4 @@
+material : "eut2.reflective.rfx" {
+	texture[0] : "/material/special/lights_01.tobj"
+	texture_name[0] : "texture_base"
+}

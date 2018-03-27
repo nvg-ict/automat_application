@@ -1,0 +1,9 @@
+material : "eut2.building.night.rfx" {
+	texture[0] : "/prefab/gas_big/color2.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	aux[5] : 0
+	diffuse : { 1 , 1 , 1 }
+	shininess : 50
+	specular : { 0 , 0 , 0 }
+}

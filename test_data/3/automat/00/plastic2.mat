@@ -1,0 +1,10 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/vehicle/ai/promods/road/dacia_logan/plastic2.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.694118 , 0.694118 , 0.694118 }
+	specular : { 0.0901961 , 0.0901961 , 0.0901961 }
+	shininess : 20
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

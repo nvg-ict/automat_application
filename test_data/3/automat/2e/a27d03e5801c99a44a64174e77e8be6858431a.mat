@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.fx" {
+	texture[0] : "/m0d3l/billboard_pl/PL_city/tablica/tablica_05.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 4
+	specular : { 0 , 0 , 0 }
+}

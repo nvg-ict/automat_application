@@ -1,0 +1,10 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/prefab/border/de_at_2/color.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.0705882 , 0.0705882 , 0.0705882 }
+	shininess : 15
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.weight.a.decal.over.rfx" {
+	texture[0] : "/material/road_template/shoulder_decal_ca01.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 1
+	shininess : 15
+	specular : { 0.132868 , 0.132868 , 0.132868 }
+	queue_bias : 1
+}

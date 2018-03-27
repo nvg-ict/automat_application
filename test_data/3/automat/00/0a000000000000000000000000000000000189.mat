@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.a" {
+	texture[0] : "/model/latvia/crossing/portal_se.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.00392157 , 0.00392157 , 0.00392157 }
+	shininess : 40
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

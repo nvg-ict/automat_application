@@ -1,0 +1,14 @@
+material : "eut2.dif.spec.add.env.nofresnel.tsnmapuv.rfx" {
+	texture[0] : "/vehicle/truck/upgrade/wheel/rim/front_4.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/truck/upgrade/wheel/rim/front_4_n.tobj"
+	texture_name[1] : "texture_nmap"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	add_ambient : 1
+	diffuse : { 0.214041 , 0.214041 , 0.214041 }
+	env_factor : { 0.296429 , 0.296429 , 0.296429 }
+	reflection : 0
+	shininess : 60
+	specular : { 2 , 2 , 2 }
+}

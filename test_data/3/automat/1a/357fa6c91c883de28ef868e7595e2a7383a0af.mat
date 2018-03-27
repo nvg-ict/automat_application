@@ -1,0 +1,17 @@
+material : "eut2.dif.spec.mult.dif.spec.add.env.tsnmapuv.rfx" {
+	texture[0] : "/vehicle/ai/incentro/bombarider_incentro_c.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/share/textures/generic/white_0.tobj"
+	texture_name[1] : "texture_mult"
+	texture[2] : "/vehicle/ai/incentro/bombarider_incentro_n.tobj"
+	texture_name[2] : "texture_nmap"
+	texture[3] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[3] : "texture_reflection"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 1.2 , 1.2 , 1.2 }
+	fresnel : { -0.1 , 1 }
+	reflection : 0
+	shininess : 50
+	specular : { 0.522521 , 0.522521 , 0.522521 }
+}

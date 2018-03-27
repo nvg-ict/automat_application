@@ -1,0 +1,16 @@
+material : "eut2.dif.spec.weight.weight.dif.spec.weight.tg0.tg1.rfx" {
+	texture[0] : "/material/terrain/pebble_stones_4_512.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/terrain/dirt_3_512.tobj"
+	texture_name[1] : "texture_over"
+	add_ambient : 0
+	aux[0] : { 2 , 2 }
+	aux[1] : { 5 , 5 }
+	aux[3] : { 0.2 , 0.2 , 0.2 , 12 }
+	diffuse : { 0.999999 , 0.999999 , 0.999999 }
+	reflection : 0
+	reflection2 : 0
+	shininess : 12
+	specular : { 0.073239 , 0.073239 , 0.073239 }
+	substance : "dirt"
+}

@@ -1,0 +1,5 @@
+material : "eut2.unlit.vcol.tex.awhite.decal.mult.rfx" {
+	texture[0] : "/material/tiled/decal_building_01.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+}

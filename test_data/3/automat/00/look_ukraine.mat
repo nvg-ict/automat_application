@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.mult.dif.spec.add.env" {
+	texture[0] : "/vehicle/ai/promods/road/toyota_prius/color.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/promods/road/toyota_prius/look_ukraine.tobj"
+	texture_name[1] : "texture_mult"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.521569 , 0.521569 , 0.521569 }
+	shininess : 240
+	add_ambient : 0
+	env_factor : { 0.184475 , 0.184475 , 0.184475 }
+	fresnel : { 0.2 , 0.9 }
+
+}

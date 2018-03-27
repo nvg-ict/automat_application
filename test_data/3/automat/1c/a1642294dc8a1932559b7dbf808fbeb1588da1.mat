@@ -1,0 +1,8 @@
+material : "eut2.building.day" {
+	texture[0] : "/prefab/gas/gas_station.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.0174963 , 0.0174963 , 0.0174963 }
+	shininess : 12
+	add_ambient : 0
+}

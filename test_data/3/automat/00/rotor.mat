@@ -1,0 +1,10 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/vehicle/ai/share/rotor_j.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.298039 , 0.298039 , 0.298039 }
+	specular : { 0.592157 , 0.592157 , 0.592157 }
+	shininess : 30
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

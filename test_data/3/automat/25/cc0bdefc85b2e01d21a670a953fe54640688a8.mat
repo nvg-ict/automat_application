@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.weight.fx" {
+	texture[0] : "/material/hw_def_nie.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 1
+	shininess : 15
+	specular : { 1.6 , 1.6 , 1.6 }
+	substance : "road"
+}

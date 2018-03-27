@@ -1,0 +1,11 @@
+material : "eut2.building.add.env.day.fx" {
+	texture[0] : "/prefab/recruitment_agency/recruitment_agency.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/building_reflection/building_ref.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 1 , 1 , 1 }
+	shininess : 20
+	add_ambient : 0
+	env_factor : { 1 , 1 , 1 }
+}

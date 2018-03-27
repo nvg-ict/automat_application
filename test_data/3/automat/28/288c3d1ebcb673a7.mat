@@ -1,0 +1,12 @@
+material : "eut2.dif.spec.add.env" {
+	texture[0] : "/vehicle/share/models/wirtgen_w250i/color.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 0.6 , 0.6 , 0.6 }
+	specular : { 1 , 1 , 1 }
+	shininess : 250
+	env_factor : { 0.0737725 , 0.0737725 , 0.0737725 }
+	fresnel : { 0.2 , 0.9 }
+
+}

@@ -1,0 +1,14 @@
+material : "eut2.dif.spec.mult.dif.spec.tsnmap.shadow.rfx" {
+	texture[0] : "/model/mover/characters/textures/body/man_body_02_no.tobj"
+	texture_name[0] : "texture_nmap"
+	texture[1] : "/model/mover/characters/textures/body/man_body_02_lum.tobj"
+	texture_name[1] : "texture_base"
+	texture[2] : "/model/mover/characters/textures/body/wear_str_01.tobj"
+	texture_name[2] : "texture_mult"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 20
+	specular : { 1 , 1 , 1 }
+}

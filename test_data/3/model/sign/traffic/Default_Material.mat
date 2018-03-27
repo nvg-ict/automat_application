@@ -1,0 +1,8 @@
+material : "eut2.dif.over" {
+	diffuse : { 0.8 , 0.8 , 0.8 }
+	specular : { 0 , 0 ,01 }
+	shininess : 20
+	tint : { 1 , 1 , 1 }
+	add_ambient : 0
+
+}

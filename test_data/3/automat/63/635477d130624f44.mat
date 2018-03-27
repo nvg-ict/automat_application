@@ -1,0 +1,12 @@
+material : "eut2.dif.spec.tsnmap.shadow.rfx" {
+	texture[0] : "/model/mover/characters/textures/heads/man_vanila_ice_no.tobj"
+	texture_name[0] : "texture_nmap"
+	texture[1] : "/model/mover/characters/textures/heads/man_vanila_ice.tobj"
+	texture_name[1] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 50
+	specular : { 1 , 1 , 1 }
+}

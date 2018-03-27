@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.rfx" {
+	texture[0] : "/vehicle/truck/volvo_fh16_2009/interior/fabric.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 0.522522 , 0.522522 , 0.522522 }
+	reflection : 0
+	shininess : 15
+	specular : { 0.0348251 , 0.02483 , 0.0376357 }
+}

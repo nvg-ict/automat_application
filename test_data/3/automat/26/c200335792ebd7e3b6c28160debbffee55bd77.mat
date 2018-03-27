@@ -1,0 +1,11 @@
+material : "eut2.lamp" {
+	texture[0] : "/model/traffic_light/traffic_lights_de.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/model/traffic_light/traffic_lights_de.tobj"
+	texture_name[1] : "texture_mask"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.447059 , 0.447059 , 0.447059 }
+	shininess : 90
+	add_ambient : 0
+
+}

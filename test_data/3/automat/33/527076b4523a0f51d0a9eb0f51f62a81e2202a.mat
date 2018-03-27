@@ -1,0 +1,19 @@
+material : "eut2.dif.spec.weight.mult2.weight2.fx" {
+	texture[0] : "/material/road/asphalt11.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/road/detail/asphalt11.tobj"
+	texture_name[1] : "texture_mult"
+	texture[2] : "/material/road/asphalt11.tobj"
+	texture_name[2] : "texture_base_1"
+	texture[3] : "/material/road/detail/asphalt11.tobj"
+	texture_name[3] : "texture_mult_1"
+	add_ambient : 0
+	aux[3] : { 1.6 , 1.6 , 1.6 , 15 }
+	aux[5] : { 1 , 1 , 1 , 1 }
+	diffuse : { 1.35326 , 1.35326 , 1.35326 }
+	reflection : 1
+	reflection2 : 1
+	shininess : 15
+	specular : { 1.22822 , 1.22822 , 1.22822 }
+	substance : "road"
+}

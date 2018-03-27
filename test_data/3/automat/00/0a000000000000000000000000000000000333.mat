@@ -1,0 +1,9 @@
+material : "eut2.sign" {
+	texture[0] : "/model/sign/overlay/city_fr_limoges_b.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 1 , 1 , 1 }
+	shininess : 20
+	add_ambient : 0
+	reflection : 0
+}

@@ -1,0 +1,4 @@
+material : "eut2.shadowonly" {
+	aux[1] : { 0 , 0 }
+
+}

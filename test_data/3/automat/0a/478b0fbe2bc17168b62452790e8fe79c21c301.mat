@@ -1,0 +1,11 @@
+material : "eut2.building.add.env.day.fx" {
+	texture[0] : "/prefab/warehouse_grey/warehouse_large_grey.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/generic_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.839066 , 0.839066 , 0.839066 }
+	shininess : 99
+	add_ambient : 0
+	env_factor : { 0.856128 , 0.856128 , 0.856128 }
+}

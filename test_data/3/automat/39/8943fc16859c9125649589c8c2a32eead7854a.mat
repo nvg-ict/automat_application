@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.fx" {
+	texture[0] : "/model/railing/crash_barrier1_uk.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.214041 , 0.214041 , 0.214041 }
+	shininess : 25
+	add_ambient : 0
+	reflection : 0
+	shadow_bias : 0
+}

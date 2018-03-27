@@ -1,0 +1,11 @@
+material : "eut2.dif.spec.tg0.rfx" {
+	texture[0] : "/material/terrain/grass_dry_dense_main_sfr.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	aux[0] : { 13 , 13 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 4
+	specular : { 0 , 0 , 0 }
+	substance : "grass"
+}

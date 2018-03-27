@@ -1,0 +1,9 @@
+material : "eut2.dif.a" {
+	texture[0] : "/model/vegetation/democentre/trees_demo01.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.233664 , 0.233664 , 0.233664 }
+	specular : { 0 , 0 , 0 }
+	shininess : 4
+	add_ambient : 6
+	reflection : 0
+}

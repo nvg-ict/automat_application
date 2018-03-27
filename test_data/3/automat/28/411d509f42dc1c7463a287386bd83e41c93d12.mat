@@ -1,0 +1,5 @@
+material : "eut2.flare" {
+	texture[0] : "/model/railing/tunnel/arlberg_tunel.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.275959 , 0.275959 , 0.275959 }
+}

@@ -1,0 +1,10 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/vehicle/ai/share/grille_j1.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.894118 , 0.894118 , 0.894118 }
+	specular : { 0.0431373 , 0.0431373 , 0.0431373 }
+	shininess : 60
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

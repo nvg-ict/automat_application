@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow" {
+	texture[0] : "/model/sign/navigation/board_dk_smallroad_str_hw.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.214041 , 0.214041 , 0.214041 }
+	shininess : 30
+	add_ambient : 0
+	reflection : 0
+	shadow_bias : 0
+}

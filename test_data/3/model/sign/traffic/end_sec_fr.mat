@@ -1,0 +1,9 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/model/sign/traffic/end_section_fr.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0 , 0 , 0 }
+	shininess : 20
+	add_ambient : 0
+
+}

@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.asafew.a.rfx" {
+	texture[0] : "/model2/power_line/railway_powerlines_01_fr.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 0.999998 , 0.999998 , 0.999998 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 65
+	specular : { 0.0908417 , 0.0908417 , 0.0908417 }
+}

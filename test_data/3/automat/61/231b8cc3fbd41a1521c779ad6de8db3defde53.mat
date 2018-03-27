@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.fx" {
+	texture[0] : "/m0d3l/other/reklamy/reklama01.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 10
+	specular : { 0.00393594 , 0.00393594 , 0.00393594 }
+}

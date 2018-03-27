@@ -1,0 +1,5 @@
+material : "eut2.unlit.tex.paint.add.rfx" {
+	texture[0] : "/model/symbol/parking_new.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+}

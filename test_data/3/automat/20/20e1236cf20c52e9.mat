@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.mult.dif.spec.add.env" {
+	texture[0] : "/vehicle/ai/mondeo_2009/color.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/mondeo_2009/look_dk.tobj"
+	texture_name[1] : "texture_mult"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	diffuse : { 0.996078 , 0.996078 , 0.996078 }
+	specular : { 0.560784 , 0.560784 , 0.560784 }
+	shininess : 250
+	add_ambient : 0
+	env_factor : { 0.219051 , 0.219051 , 0.219051 }
+	fresnel : { 0.2 , 0.9 }
+
+}

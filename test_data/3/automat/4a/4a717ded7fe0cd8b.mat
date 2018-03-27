@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.rfx" {
+	texture[0] : "/model/mover/flag_showroom_nl.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : -2
+	shininess : 26
+	specular : { 0.132868 , 0.132868 , 0.132868 }
+}

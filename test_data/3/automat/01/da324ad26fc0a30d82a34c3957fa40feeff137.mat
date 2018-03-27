@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.weight.weight.dif.spec.weight.tg1.rfx" {
+	texture[0] : "/material/road/road_template/sc/ter_trans_placeholder.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/terrain/grass_city_fr.tobj"
+	texture_name[1] : "texture_over"
+	add_ambient : 0
+	aux[1] : { 5 , 5 }
+	aux[3] : { 0.1 , 0.1 , 0.1 , 12 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	reflection2 : 0
+	shininess : 12
+	specular : { 0.0331048 , 0.0331048 , 0.0331048 }
+	substance : "grass"
+}

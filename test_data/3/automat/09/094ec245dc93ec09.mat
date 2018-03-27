@@ -1,0 +1,14 @@
+material : "eut2.dif.spec.weight.weight.dif.spec.weight.rfx" {
+	texture[0] : "/material/road/road_template/fr/gray_fr.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/road/road_template/it/1_it.tobj"
+	texture_name[1] : "texture_over"
+	add_ambient : 0
+	aux[3] : { 1.6 , 1.6 , 1.6 , 15 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 1
+	reflection2 : 1
+	shininess : 15
+	specular : { 1.6 , 1.6 , 1.6 }
+	substance : "road"
+}

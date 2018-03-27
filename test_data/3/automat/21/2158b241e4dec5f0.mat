@@ -1,0 +1,10 @@
+material : "eut2.dif.a.decal.over.rfx" {
+	texture[0] : ".tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 1
+	specular : { 0.0901961 , 0.0901961 , 0.0901961 }
+	queue_bias : 1
+}

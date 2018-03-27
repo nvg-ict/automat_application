@@ -1,0 +1,15 @@
+material : "eut2.truckpaint.airbrush.rfx" {
+	texture[0] : "/vehicle/ai/promods/rail/tram/konstal/konstal.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/promods/rail/tram/konstal/konsta1.tobj"
+	texture_name[1] : "texture_paintjob"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	add_ambient : 0
+	aux[8] : { 1 , 1 , 1 }
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 0.0100228 , 0.0100228 , 0.0100228 }
+	fresnel : { 0.2 , 0.9 }
+	shininess : 45
+	specular : { 0.073239 , 0.073239 , 0.073239 }
+}

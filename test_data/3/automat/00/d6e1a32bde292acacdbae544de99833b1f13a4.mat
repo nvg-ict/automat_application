@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.rfx" {
+	texture[0] : "/vehicle/wheel/cargo/cargo.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 0.652298 , 0.652298 , 0.652298 }
+	reflection : 0
+	shininess : 10
+	specular : { 0.0456608 , 0.0456608 , 0.0456608 }
+}

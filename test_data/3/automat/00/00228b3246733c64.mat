@@ -1,0 +1,9 @@
+material : "eut2.dif.lum.shadow.rfx" {
+	texture[0] : "/model/panorama/london/wstmstrclk.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+	diffuse : { 0.384314 , 0.384314 , 0.384314 }
+	shininess : 115
+	specular : { 0.211765 , 0.211765 , 0.211765 }
+}

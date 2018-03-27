@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.weight.add.env.tsnmap.rfx" {
+	texture[0] : "/vehicle/truck/upgrade/steering_knob/standard_v2_blue.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/truck/upgrade/steering_knob/standard_v2_normalmap.tobj"
+	texture_name[1] : "texture_nmap"
+	texture[2] : "/material/environment/interior_static/interior_static.tobj"
+	texture_name[2] : "texture_reflection"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 1 , 1 , 1 }
+	fresnel : { 0.2 , 1 }
+	reflection : 0
+	shininess : 25
+	specular : { 1 , 1 , 1 }
+}

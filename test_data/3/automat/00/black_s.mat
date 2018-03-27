@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.weight" {
+	texture[0] : "/vehicle/ai/share/black_s.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.239216 , 0.239216 , 0.239216 }
+	specular : { 0.0431373 , 0.0431373 , 0.0431373 }
+	shininess : 65
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

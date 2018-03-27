@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.fx" {
+	texture[0] : "/prefab/warehouse_grey/warehouse_large_grey.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.620778 , 0.620778 , 0.620778 }
+	shininess : 55
+	add_ambient : 0
+	reflection : 0
+}

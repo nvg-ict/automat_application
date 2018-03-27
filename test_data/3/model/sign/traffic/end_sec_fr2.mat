@@ -1,0 +1,7 @@
+material : "eut2.dif" {
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0 , 0 , 0 }
+	shininess : 20
+	add_ambient : 0
+
+}

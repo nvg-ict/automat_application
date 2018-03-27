@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.mult.dif.spec.add.env" {
+	texture[0] : "/vehicle/ai/bmw5/color.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/bmw5/look_swiss.tobj"
+	texture_name[1] : "texture_mult"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.458824 , 0.458824 , 0.458824 }
+	shininess : 250
+	add_ambient : 0
+	env_factor : { 0.209099 , 0.209099 , 0.209099 }
+	fresnel : { 0.2 , 0.9 }
+
+}

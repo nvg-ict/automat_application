@@ -1,0 +1,9 @@
+material : "eut2.building.day.fx" {
+	texture[0] : "/model/lamp/port_lamp_texture.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0 , 0 , 0 }
+	shininess : 4
+	add_ambient : 0
+	aux[5] : 0
+}

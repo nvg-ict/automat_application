@@ -1,0 +1,8 @@
+material : "eut2.dif.spec.shadow" {
+	texture[0] : "/model/sign/traffic/no/merge10.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.96283 , 0.96283 , 0.96283 }
+	shininess : 25
+	add_ambient : 0
+}

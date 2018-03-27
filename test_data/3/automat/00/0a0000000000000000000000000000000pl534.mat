@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.fx" {
+	texture[0] : "/model/sign/company_logos/polaris_lines/color_line_flag.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.132868 , 0.132868 , 0.132868 }
+	shininess : 26
+	add_ambient : 0
+	reflection : 0
+	shadow_bias : 0
+}

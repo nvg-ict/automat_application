@@ -1,0 +1,12 @@
+material : "eut2.dif.spec.add.env.nofresnel" {
+	texture[0] : "/vehicle/ai/share/chrom.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 0.784314 , 0.784314 , 0.886275 }
+	specular : { 0.894118 , 0.894118 , 0.894118 }
+	shininess : 50
+	add_ambient : 0
+	env_factor : { 0.39 , 0.39 , 0.39 }
+
+}

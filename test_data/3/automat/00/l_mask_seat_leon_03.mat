@@ -1,0 +1,15 @@
+material : "eut2.lamp.add.env" {
+	texture[0] : "/vehicle/ai/promods/road/seat_leon_03/lights.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/promods/road/seat_leon_03/lamp.tobj"
+	texture_name[1] : "texture_mask"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	diffuse : { 0.8 , 0.8 , 0.8 }
+	specular : { 0.211765 , 0.211765 , 0.211765 }
+	shininess : 80
+	add_ambient : 0
+	env_factor : { 0.5 , 0.5 , 0.5 }
+	fresnel : { 0.2 , 0.9 }
+
+}

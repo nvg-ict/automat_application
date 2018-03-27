@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.weight.weight.dif.spec.weight.tg1.rfx" {
+	texture[0] : "/material/road/road_template/sc/ter_trans_placeholder.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/terrain/asphalt_tiles_eu_01.tobj"
+	texture_name[1] : "texture_over"
+	add_ambient : 0
+	aux[1] : { 4 , 4 }
+	aux[3] : { 1 , 1 , 1 , 20 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	reflection2 : 0
+	shininess : 12
+	specular : { 0.0331048 , 0.0331048 , 0.0331048 }
+	substance : "road"
+}

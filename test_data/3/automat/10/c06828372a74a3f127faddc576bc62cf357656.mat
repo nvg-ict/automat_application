@@ -1,0 +1,14 @@
+material : "eut2.lamp.add.env.fx" {
+	texture[0] : "/vehicle/ai/promods/road/london/lights.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/ai/promods/road/london/lamp.tobj"
+	texture_name[1] : "texture_mask"
+	texture[2] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[2] : "texture_reflection"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 0.214041 , 0.214041 , 0.214041 }
+	fresnel : { 0.2 , 0.9 }
+	shininess : 80
+	specular : { 0.447988 , 0.447988 , 0.447988 }
+}

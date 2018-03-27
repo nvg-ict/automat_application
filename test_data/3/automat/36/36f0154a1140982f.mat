@@ -1,0 +1,9 @@
+material : "eut2.building.lvcol.day.rfx" {
+	texture[0] : "/prefab2/tollgate/tolllgates_fr.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	aux[5] : 10
+	diffuse : { 1 , 1 , 1 }
+	shininess : 65
+	specular : { 1 , 1 , 1 }
+}

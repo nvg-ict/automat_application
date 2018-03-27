@@ -1,0 +1,12 @@
+material : "eut2.building.add.env.day.rfx" {
+	texture[0] : "/model/railing/tunnel/city_tunel2.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/ui_vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	add_ambient : 0
+	aux[5] : 0
+	diffuse : { 0.211765 , 0.211765 , 0.211765 }
+	env_factor : { 0.073239 , 0.073239 , 0.073239 }
+	shininess : 35
+	specular : { 1 , 1 , 1 }
+}

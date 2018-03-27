@@ -1,0 +1,8 @@
+material : "eut2.sign" {
+	texture[0] : "/model/sign/navigation/symbol_fr.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0 , 0 , 0 }
+	shininess : 4
+	add_ambient : 0
+}

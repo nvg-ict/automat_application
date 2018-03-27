@@ -1,0 +1,7 @@
+material : "eut2.lightmap.night.rfx" {
+	texture[0] : "/material/decal/bra_spot_lights_2.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	shininess : 0
+	specular : { 0 , 0 , 0 }
+}

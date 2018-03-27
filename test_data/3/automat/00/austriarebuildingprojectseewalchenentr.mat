@@ -1,0 +1,9 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/model/sign/traffic/seewalchen_enter.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.96283 , 0.96283 , 0.96283 }
+	shininess : 25
+	add_ambient : 0
+	reflection : 0
+}

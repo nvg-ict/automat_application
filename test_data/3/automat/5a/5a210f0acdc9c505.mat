@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.a.rfx" {
+	texture[0] : "/model/sign/navigation/textures/board_hu.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 85
+	specular : { 0.603827 , 0.603827 , 0.603827 }
+}

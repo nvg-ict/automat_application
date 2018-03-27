@@ -1,0 +1,10 @@
+material : "eut2.dif.tg0.rfx" {
+	texture[0] : "/material/terrain/grass_green_main_south_fr.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	aux[0] : { 6 , 6 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 8
+	specular : { 0.0100228 , 0.0100228 , 0.0100228 }
+}

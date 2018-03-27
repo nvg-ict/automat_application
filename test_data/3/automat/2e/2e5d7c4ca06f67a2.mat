@@ -1,0 +1,5 @@
+material : "eut2.decalshadow.rfx" {
+	texture[0] : "/prefab/bridge/cardiff_bridge_decals.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+}

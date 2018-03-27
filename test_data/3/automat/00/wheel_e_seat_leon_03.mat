@@ -1,0 +1,10 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/vehicle/wheel/seat_leon_03/wheel.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.2 , 0.2 , 0.2 }
+	specular : { 0.6 , 0.6 , 0.6 }
+	shininess : 40
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

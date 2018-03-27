@@ -1,0 +1,10 @@
+material : "eut2.dif.spec" {
+	texture[0] : "/vehicle/ai/promods/road/opel_insignia/base.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 0.494118 , 0.494118 , 0.494118 }
+	specular : { 0.0431373 , 0.0431373 , 0.0431373 }
+	shininess : 25
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

@@ -1,0 +1,10 @@
+material : "eut2.lamp.fx" {
+	texture[0] : "/model/trmodel/share/alitr.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/model/trmodel/share/alitr.tobj"
+	texture_name[1] : "texture_mask"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	shininess : 20
+	specular : { 0.00393594 , 0.00393594 , 0.00393594 }
+}

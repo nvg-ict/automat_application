@@ -1,0 +1,13 @@
+material : "eut2.dif.spec.mult.dif.spec.iamod.dif.spec.rfx" {
+	texture[0] : "/material/tiled/plaster_gs_01.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/tiled/iamod_building_01.tobj"
+	texture_name[1] : "texture_iamod"
+	texture[2] : "/material/tiled/plaster_over_01.tobj"
+	texture_name[2] : "texture_mult"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 65
+	specular : { 1 , 1 , 1 }
+}

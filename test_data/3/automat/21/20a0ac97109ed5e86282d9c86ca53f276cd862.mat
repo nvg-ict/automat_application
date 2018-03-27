@@ -1,0 +1,12 @@
+material : "eut2.building.add.env.day.fx" {
+	texture[0] : "/m0d3l/billboard_pl/neony/logo_82.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	add_ambient : 0
+	aux[5] : 0
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 0.787412 , 0.787412 , 0.787412 }
+	shininess : 60
+	specular : { 0.787412 , 0.787412 , 0.787412 }
+}

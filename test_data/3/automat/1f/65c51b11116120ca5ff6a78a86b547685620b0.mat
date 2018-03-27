@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.a.over.fx" {
+	texture[0] : "/model/rock/az_top_alfa_01.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 0.999999 , 0.999999 , 0.999999 }
+	reflection : 0
+	shininess : 4
+	specular : { 0 , 0 , 0 }
+	queue_bias : 1
+}

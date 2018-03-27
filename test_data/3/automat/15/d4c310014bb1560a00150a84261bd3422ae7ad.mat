@@ -1,0 +1,16 @@
+material : "eut2.dif.spec.fade.dif.spec.tsnmap.fx" {
+	texture[0] : "/model/rock/az_wall_red.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/model/rock/az_wall_red.tobj"
+	texture_name[1] : "texture_detail"
+	texture[2] : "/model/rock/az_wall_nrm.tobj"
+	texture_name[2] : "texture_nmap"
+	texture[3] : "/model/rock/az_wall_nrm.tobj"
+	texture_name[3] : "texture_nmap_detail"
+	add_ambient : 0
+	aux[5] : { 40 , 100 , 0 , 4 }
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 20
+	specular : { 0.0134117 , 0.0134117 , 0.0134117 }
+}

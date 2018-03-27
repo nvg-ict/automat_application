@@ -1,0 +1,9 @@
+material : "eut2.light.tex" {
+	texture[0] : "/prefab/tollgate/tollgate_a2_poland/lightmap.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0 , 0 , 0 }
+	shininess : 0
+	aux[1] : { 0 , 0 }
+
+}

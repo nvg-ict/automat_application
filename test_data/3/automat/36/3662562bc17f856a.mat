@@ -1,0 +1,8 @@
+material : "eut2.dif.spec.weight.rfx" {
+	texture[0] : "/road_template/pro/land/materials/asphalt_off1.tobj"
+	texture_name[0] : "texture_base"
+	reflection : 1
+	shininess : 15
+	specular : { 1.09435 , 1.09435 , 1.09435 }
+	substance : "road"
+}

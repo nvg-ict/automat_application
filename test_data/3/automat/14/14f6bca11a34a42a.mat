@@ -1,0 +1,9 @@
+material : "eut2.building.day.rfx" {
+	texture[0] : "/model2/landmark/marseille/marseille_hill_01_fr.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	aux[5] : 0
+	diffuse : { 0.999999 , 0.999999 , 0.999999 }
+	shininess : 4
+	specular : { 0 , 0 , 0 }
+}

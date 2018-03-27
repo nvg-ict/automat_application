@@ -1,0 +1,11 @@
+material : "eut2.dif.spec.mult.dif.spec" {
+	texture[0] : "/vehicle/trailer_eu/reefer/plain.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/vehicle/trailer_eu/company/transinet.tobj"
+	texture_name[1] : "texture_mult"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.890898 , 0.890898 , 0.890898 }
+	shininess : 35
+	add_ambient : 0
+	reflection : 0
+}

@@ -1,0 +1,4 @@
+material : "eut2.reflective.rfx" {
+	texture[0] : "/model/sign/traffic/trsign_us_blank_diamond.tobj"
+	texture_name[0] : "texture_base"
+}

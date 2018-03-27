@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.rfx" {
+	texture[0] : "/model/sign/small_roads_navigation/at_sr_s_salzburg_r_klagen.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 30
+	specular : { 0.214041 , 0.214041 , 0.214041 }
+}

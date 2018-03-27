@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.mult.dif.spec.rfx" {
+   texture[0] : "/vehicle/ai/promods/rail/tram/konstal/konstal.tobj"
+   texture_name[0] : "texture_base"
+   texture[1] : "/vehicle/ai/promods/rail/tram/konstal/konsta1.tobj"
+   texture_name[1] : "texture_mult"
+   add_ambient : 0
+   diffuse : { 1.0 , 1.0 , 1.0 }
+   shininess : 25
+   specular : { 0.211765 , 0.211765 , 0.211765 }
+}

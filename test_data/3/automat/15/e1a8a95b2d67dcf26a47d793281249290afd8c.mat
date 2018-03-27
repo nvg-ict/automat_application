@@ -1,0 +1,12 @@
+material : "eut2.dif.spec.add.env.nofresnel" {
+	texture[0] : "/vehicle/ai/promods/road/toyota_prius/color.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 1 , 1 , 1 }
+	shininess : 60
+	add_ambient : 0
+	env_factor : { 0.787412 , 0.787412 , 0.787412 }
+
+}

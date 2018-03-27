@@ -1,0 +1,13 @@
+material : "eut2.dif.weight.dif.rfx" {
+	texture[0] : "/model/rock/rock_grey_big.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/terrain/dirty_grass_2_main.tobj"
+	texture_name[1] : "texture_over"
+	add_ambient : 1
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	reflection2 : 0
+	shininess : 30
+	specular : { 0.00393594 , 0.00393594 , 0.00393594 }
+	substance : "grass"
+}

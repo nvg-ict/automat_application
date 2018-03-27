@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.shadow.fx" {
+	texture[0] : "/model2/mover/train/sjk_postvagnen_sc.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shadow_bias : 0
+	shininess : 100
+	specular : { 0.4285 , 0.4285 , 0.4285 }
+}

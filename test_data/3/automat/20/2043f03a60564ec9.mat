@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.a.decal.over.rfx" {
+	texture[0] : "/model/sign/truck_company_logos/renault/renault_totem.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 4
+	specular : { 0 , 0 , 0 }
+	queue_bias : 1
+}

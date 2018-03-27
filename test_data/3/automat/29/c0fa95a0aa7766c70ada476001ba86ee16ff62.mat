@@ -1,0 +1,10 @@
+material : "eut2.dif.spec.decal" {
+	texture[0] : "/prefab/fork/bridge_decal.tobj"
+	texture_name[0] : "texture_base"
+	diffuse : { 1 , 1 , 1 }
+	specular : { 0.317647 , 0.317647 , 0.317647 }
+	shininess : 40
+	add_ambient : 0
+	aux[1] : { 0 , 0 }
+
+}

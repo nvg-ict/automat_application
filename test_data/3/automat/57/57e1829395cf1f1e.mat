@@ -1,0 +1,8 @@
+material : "eut2.lightmap.night.rfx" {
+	texture[0] : "/vehicle/ai/bombardier_agc/decal_lights.tobj"
+	texture_name[0] : "texture_base"
+	aux[0] : 0.2
+	diffuse : { 0.671535 , 0.671535 , 0.671535 }
+	shininess : 0
+	specular : { 0.214041 , 0.214041 , 0.214041 }
+}

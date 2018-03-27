@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.mult.rfx" {
+	texture[0] : "/model2/lamp/lamps_fr_fr.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 65
+	specular : { 1 , 1 , 1 }
+}

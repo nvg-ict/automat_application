@@ -1,0 +1,15 @@
+material : "eut2.dif.spec.weight.weight.dif.spec.weight.tg0.fx" {
+	texture[0] : "/material/terrain/grass_green_main_sc.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/road/hw_def_dk.tobj"
+	texture_name[1] : "texture_over"
+	substance : "road"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	reflection2 : 1.5
+	shininess : 12
+	aux[3] : { 1.6 , 1.6 , 1.6 , 15 }
+	specular : { 0.0100228 , 0.0100228 , 0.0100228 }
+	aux[0] : { 13 , 13 }
+}

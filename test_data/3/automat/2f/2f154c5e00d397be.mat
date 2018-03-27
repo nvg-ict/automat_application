@@ -1,0 +1,9 @@
+material : "eut2.dif.spec.decal.over.rfx" {
+	texture[0] : "/prefab/cross/road_decals_dark.tobj"
+	texture_name[0] : "texture_base"
+	add_ambient : 0
+	diffuse : { 1 , 1 , 1 }
+	reflection : 0
+	shininess : 4
+	specular : { 1 , 1 , 1 }
+}

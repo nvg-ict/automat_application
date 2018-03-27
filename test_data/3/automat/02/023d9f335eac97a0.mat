@@ -1,0 +1,15 @@
+material : "eut2.truckpaint.airbrush.altuv.rfx" {
+	texture[0] : "/vehicle/truck/renault_magnum_2009/textures/color.tobj"
+	texture_name[0] : "texture_base"
+	texture[1] : "/material/environment/vehicle_reflection.tobj"
+	texture_name[1] : "texture_reflection"
+	texture[2] : "/vehicle/truck/renault_magnum_2009/textures/empty.tobj"
+	texture_name[2] : "texture_paintjob"
+	add_ambient : 0
+	aux[8] : { 0.188235 , 0.192157 , 0.215686 }
+	diffuse : { 1 , 1 , 1 }
+	env_factor : { 0.073239 , 0.073239 , 0.073239 }
+	fresnel : { 0.2 , 0.9 }
+	shininess : 250
+	specular : { 1.19418 , 1.19418 , 1.19418 }
+}

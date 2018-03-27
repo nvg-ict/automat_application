@@ -1,0 +1,50 @@
+﻿<Window x:Class="AutomatApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutomatApp" 
+        xmlns:cmd="clr-namespace:AutomatApp.Commands"
+        xmlns:usr="clr-namespace:AutomatApp.UserControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="cmd:CustomCommands.Exit" CanExecute="ExitCommand_CanExecute" Executed="ExitCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.SetWorkingDir" CanExecute="WorkingDirCommand_CanExecute" Executed="WorkingDirCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.OpenFile" CanExecute="OpenFileCommand_CanExecute" Executed="OpenFileCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.OpenDir" CanExecute="OpenDirCommand_CanExecute" Executed="OpenDirCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.SetMatDir" CanExecute="OpenDirCommand_CanExecute" Executed="OpenDirCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.SetExportDirectory" CanExecute="OpenDirCommand_CanExecute" Executed="OpenDirCommand_Executed" />
+        <CommandBinding Command="cmd:CustomCommands.Settings" CanExecute="OpenDirCommand_CanExecute" Executed="SettingCommand_Executed" />
+    </Window.CommandBindings>
+    
+    <DockPanel Margin="10,0,10,10">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Command="cmd:CustomCommands.OpenFile" />
+                <MenuItem Command="cmd:CustomCommands.OpenDir" />
+                <Separator/>
+                <MenuItem Command="cmd:CustomCommands.Exit" />
+            </MenuItem>
+            <MenuItem Header="Settings">
+                <MenuItem Command="cmd:CustomCommands.SetWorkingDir" IsCheckable="true"/>
+                <MenuItem Command="cmd:CustomCommands.SetMatDir" IsCheckable="true"/>
+                <MenuItem Command="cmd:CustomCommands.SetExportDirectory" IsCheckable="true"/>
+                <Separator/>
+                <MenuItem Command="cmd:CustomCommands.Settings"/>
+            </MenuItem>
+        </Menu>
+
+        <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
+            <Button Name="btnOpenFile" Click="Button_Click">Open files</Button>
+            <Button Name="btnExectute" Click="btnExectute_Click">Read files</Button>
+        </WrapPanel>
+        <usr:DragnDrop />
+        <!--<ListBox Name="lbFiles" Height="200" Width="200"/>
+        <ListView x:Name="DropList" 
+          Drop="DropList_Drop" 
+          DragEnter="DropList_DragEnter" 
+          AllowDrop="True" />-->
+    </DockPanel>
+</Window>
