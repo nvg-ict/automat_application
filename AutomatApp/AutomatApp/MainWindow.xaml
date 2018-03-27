@@ -36,15 +36,6 @@
             </MenuItem>
         </Menu>
 
-        <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
-            <Button Name="btnOpenFile" Click="Button_Click">Open files</Button>
-            <Button Name="btnExectute" Click="btnExectute_Click">Read files</Button>
-        </WrapPanel>
-        <usr:DragnDrop />
-        <!--<ListBox Name="lbFiles" Height="200" Width="200"/>
-        <ListView x:Name="DropList" 
-          Drop="DropList_Drop" 
-          DragEnter="DropList_DragEnter" 
-          AllowDrop="True" />-->
+        <usr:DragnDrop DockPanel.Dock="Top" />
     </DockPanel>
 </Window>

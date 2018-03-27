@@ -52,8 +52,6 @@ namespace AutomatApp.UserControls
 
                 foreach (var n in MatList.MatFiles)
                 {
-                    Size.Text = string.Format("Collected {0} .mat files.", MatList.Size);
-
                     Console.WriteLine(MatList.Size);
                 }
             }

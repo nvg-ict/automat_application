@@ -23,6 +23,7 @@ namespace AutomatApp
                 //Console.WriteLine(ItemMatch);
                 MatList.MatFiles.Add(ItemMatch.ToString());
             }
+            Console.WriteLine(MatList.Size);
         }
     }
 }

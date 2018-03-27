@@ -7,13 +7,14 @@
              xmlns:matFn="clr-namespace:AutomatApp.MatFunctions"
              mc:Ignorable="d" 
              x:Name="_this" >
+    <UserControl.Resources>
+        <matFn:MatList x:Key="listManager"/>
+    </UserControl.Resources>
     <DockPanel>
         <ListView DockPanel.Dock="Top"
             x:Name="DropList" 
           Drop="DropList_Drop" 
           DragEnter="DropList_DragEnter" 
-          AllowDrop="True" Height="200"
-          />
-        <TextBlock Name="Size" Height="30" Width="100" />
+          AllowDrop="True"/>
     </DockPanel>
 </UserControl>

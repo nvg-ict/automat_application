@@ -1,4 +1,5 @@
-﻿using AutomatApp.Windows;
+﻿using AutomatApp.MatFunctions;
+using AutomatApp.Windows;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
