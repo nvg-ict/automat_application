@@ -7,7 +7,8 @@
         xmlns:cmd="clr-namespace:AutomatApp.Commands"
         xmlns:usr="clr-namespace:AutomatApp.UserControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525"
+        MinHeight="200" MinWidth="250">
 
     <Window.CommandBindings>
         <CommandBinding Command="cmd:CustomCommands.Exit" CanExecute="ExitCommand_CanExecute" Executed="ExitCommand_Executed" />
@@ -18,8 +19,8 @@
         <CommandBinding Command="cmd:CustomCommands.SetExportDirectory" CanExecute="OpenDirCommand_CanExecute" Executed="ExportDirCommand_Executed" />
         <CommandBinding Command="cmd:CustomCommands.Settings" CanExecute="OpenDirCommand_CanExecute" Executed="SettingCommand_Executed" />
     </Window.CommandBindings>
-    
-    <DockPanel Margin="10,0,10,10">
+
+    <DockPanel Margin="10,0,10,10" LastChildFill="True">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
                 <MenuItem Command="cmd:CustomCommands.OpenFile" />
@@ -35,7 +36,10 @@
                 <MenuItem Command="cmd:CustomCommands.Settings"/>
             </MenuItem>
         </Menu>
+        <Grid Name="MainContent"/>
 
-        <usr:DragnDrop DockPanel.Dock="Top" />
+
+
+        <!--<usr:DragnDrop DockPanel.Dock="Top" />-->
     </DockPanel>
 </Window>

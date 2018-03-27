@@ -89,6 +89,15 @@
     <Compile Include="UserControls\DragnDrop.xaml.cs">
       <DependentUpon>DragnDrop.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\MultipleFile.xaml.cs">
+      <DependentUpon>MultipleFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\OpenOneFile.xaml.cs">
+      <DependentUpon>OpenOneFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CustomDialog.xaml.cs">
+      <DependentUpon>CustomDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
     </Compile>
@@ -107,6 +116,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UserControls\DragnDrop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\MultipleFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\OpenOneFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CustomDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

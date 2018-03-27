@@ -33,15 +33,19 @@ namespace AutomatApp.MatFunctions
     class MatManager
     {
         protected List<string> Files { get; set;}
+        protected List<string> MatPaths { get; set; }
+        public int SizeMatPaths { get { return MatPaths.Count; } }
+        public int SizeFilePaths { get { return Files.Count; } }
+
 
         public MatManager()
         {
             Files = new List<string>();
+            MatPaths = new List<string>();
         }
 
         public void Execute()
         {
-            List<string> MatPaths = new List<string>();
             //Get all mat files:
             foreach (string file in Files)
             {
