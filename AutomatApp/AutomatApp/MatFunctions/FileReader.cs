@@ -13,7 +13,6 @@ namespace AutomatApp
     {
         public static string[] ReadFile(string fileName)
         {
-            Console.WriteLine("Open file");
             string file = File.ReadAllText(fileName);
 
             var pattern = @"([a-zA-Z0-9\\-\\_\\/]*\.mat)";
