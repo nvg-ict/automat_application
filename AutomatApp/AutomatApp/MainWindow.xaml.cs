@@ -98,6 +98,15 @@ namespace AutomatApp
             Console.WriteLine("Succes");
         }
 
+        private void SetMatDirCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            MatDirsWindow window = new MatDirsWindow();
+            window.Owner = this;
+            window.ShowDialog();
+        }
+
+        
+
 
         //TRIAL AND ERROR CODE!!
 

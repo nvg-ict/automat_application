@@ -84,6 +84,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="MatFunctions\DirectoryManager.cs" />
+    <Compile Include="MatFunctions\FileManager.cs" />
     <Compile Include="MatFunctions\MatList.cs" />
     <Compile Include="MatFunctions\MatManager.cs" />
     <Compile Include="UserControls\DragnDrop.xaml.cs">
@@ -97,6 +98,9 @@
     </Compile>
     <Compile Include="Windows\CustomDialog.xaml.cs">
       <DependentUpon>CustomDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MatDirsWindow.xaml.cs">
+      <DependentUpon>MatDirsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
@@ -128,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\CustomDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MatDirsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

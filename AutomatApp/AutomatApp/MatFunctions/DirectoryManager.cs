@@ -34,10 +34,9 @@ namespace AutomatApp.MatFunctions
 
             if (folderDlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                Console.WriteLine(folderDlg.SelectedPath);
+                return folderDlg.SelectedPath;
             }
-
-            return folderDlg.SelectedPath;
+            return null;
         }
 
         public static string GetFilePath()
