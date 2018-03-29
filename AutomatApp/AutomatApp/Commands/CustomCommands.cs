@@ -20,28 +20,28 @@ namespace AutomatApp.Commands
             }
          );
 
-       public static readonly RoutedUICommand SetWorkingDir = new RoutedUICommand
-       (
-           "Set Base Directory",
-           "Set Base Directory",
-           typeof(CustomCommands),
-           null
-           //new InputGestureCollection()
-           //{
-           //     new KeyGesture(Key.B, ModifierKeys.Alt)
-           //}
-        );
+        public static readonly RoutedUICommand SetWorkingDir = new RoutedUICommand
+        (
+            "Set Base Directory",
+            "Set Base Directory",
+            typeof(CustomCommands),
+            null
+         //new InputGestureCollection()
+         //{
+         //     new KeyGesture(Key.B, ModifierKeys.Alt)
+         //}
+         );
 
-       public static readonly RoutedUICommand OpenFile = new RoutedUICommand
-       (
-           "Open File",
-           "Open File",
-           typeof(CustomCommands),
-           new InputGestureCollection()
-           {
+        public static readonly RoutedUICommand OpenFile = new RoutedUICommand
+        (
+            "Open File",
+            "Open File",
+            typeof(CustomCommands),
+            new InputGestureCollection()
+            {
                 new KeyGesture(Key.O, ModifierKeys.Control)
-           }
-        );
+            }
+         );
 
         public static readonly RoutedUICommand OpenDir = new RoutedUICommand
         (
@@ -79,6 +79,14 @@ namespace AutomatApp.Commands
            {
                 new KeyGesture(Key.S, ModifierKeys.Alt)
            }
+        );
+
+        public static readonly RoutedUICommand Info = new RoutedUICommand
+        (
+           "Info",
+           "Info",
+           typeof(CustomCommands),
+           null
         );
 
 

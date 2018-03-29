@@ -50,7 +50,11 @@ namespace AutomatApp
 
         private void WorkingDirCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            Console.WriteLine("Succes");
+            string path = DirectoryManager.GetDirectoryPath();
+            if (path != null)
+            {
+                FileManager.BaseDir = path;
+            }
         }
 
         private void OpenFileCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -79,7 +83,7 @@ namespace AutomatApp
             MultipleFileMatManager m = new MultipleFileMatManager();
             m.CollectFiles();
             m.Execute();
-            UserControls.MultipleFile MF = new UserControls.MultipleFile(m.SizeFilePaths,m.SizeMatPaths);
+            UserControls.MultipleFile MF = new UserControls.MultipleFile(m.SizeFilePaths, m.SizeMatPaths);
             CustomDialog window = new CustomDialog(MF);
             window.Owner = this;
             window.ShowDialog();
@@ -95,7 +99,16 @@ namespace AutomatApp
 
         private void ExportDirCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            Console.WriteLine("Succes");
+            string path = DirectoryManager.GetDirectoryPath();
+            if (path != null)
+            {
+                FileManager.ExportDir = path;
+            }
+        }
+
+        private void InfoCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            Console.WriteLine("INFO");
         }
 
         private void SetMatDirCommand_Executed(object sender, ExecutedRoutedEventArgs e)
@@ -103,47 +116,6 @@ namespace AutomatApp
             MatDirsWindow window = new MatDirsWindow();
             window.Owner = this;
             window.ShowDialog();
-        }
-
-        
-
-
-        //TRIAL AND ERROR CODE!!
-
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    OpenFileDialog openFileDialog = new OpenFileDialog();
-        //    openFileDialog.Multiselect = true;
-        //    openFileDialog.ValidateNames = false;
-        //    openFileDialog.CheckFileExists = false;
-        //    openFileDialog.CheckPathExists = true;
-        //    openFileDialog.Filter = "Text files (*.pmd)|*.pmd|All files (*.*)|*.*";
-        //    openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        //    if (openFileDialog.ShowDialog() == true)
-        //    {
-        //        foreach (string filename in openFileDialog.FileNames)
-        //        {
-        //            lbFiles.Items.Add(filename);
-        //        }
-        //    }
-        //}
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //CommonOpenFileDialog dialog = new CommonOpenFileDialog();
-            //dialog.InitialDirectory = "C:\\Users";
-            //dialog.IsFolderPicker = true;
-            //if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
-            //{
-            //    MessageBox.Show("You selected: " + dialog.FileName);
-            //}
-        }
-
-        private void btnExectute_Click(object sender, RoutedEventArgs e)
-        {
-            FileReader reader = new FileReader();
-            //reader.ReadFile(lbFiles.SelectedItem.ToString());
-            // lbFiles.SelectedItem;
         }
     }
 }
