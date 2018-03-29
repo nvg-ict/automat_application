@@ -67,7 +67,7 @@ namespace AutomatApp
             OneFileMatManager m = new OneFileMatManager();
             m.CollectFile();
             m.Execute();
-            UserControls.OpenOneFile OOF = new UserControls.OpenOneFile(m.SizeMatPaths);
+            UserControls.OpenOneFile OOF = new UserControls.OpenOneFile(m);
             CustomDialog window = new CustomDialog(OOF);
             window.Owner = this;
             window.ShowDialog();

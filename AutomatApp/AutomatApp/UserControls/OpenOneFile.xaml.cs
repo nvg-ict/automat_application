@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutomatApp.MatFunctions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +21,18 @@ namespace AutomatApp.UserControls
     /// </summary>
     public partial class OpenOneFile : UserControl
     {
-        public OpenOneFile(int amtOfMatFiles)
+        MatManager manager;
+        public OpenOneFile(MatManager manager)
         {
             InitializeComponent();
-            MatInfo.Content = string.Format("Collected {0} .mat files.", amtOfMatFiles);
+            this.manager = manager;
+            MatInfo.Content = string.Format("Collected {0} .mat files.", manager.MatPaths.Count);
+            PathInfo.Text = string.Format("Current paths set are: \nBase folder: {0}\nExport folder: {1} ",FileManager.BaseDir, FileManager.ExportDir);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            manager.MoveMatFiles();
         }
     }
 }

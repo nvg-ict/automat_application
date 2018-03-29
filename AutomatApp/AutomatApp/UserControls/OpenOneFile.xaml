@@ -7,11 +7,21 @@
              xmlns:matFn="clr-namespace:AutomatApp.MatFunctions"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="150">
-    <Border BorderBrush="Black" BorderThickness="2">
-        <StackPanel>
-            <Label Name="MatInfo"/>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label  Name="MatInfo"/>
+            <TextBlock Name="PathInfo"></TextBlock>
             <Label>Do you wish to retrieve the files?</Label>
-            <Button Height="30" Width="100"> Cancel</Button>
         </StackPanel>
-    </Border>
+
+        <Button Grid.Row="1" Grid.ColumnSpan="2" Click="Button_Click" Height="25" Width="80">Retrieve</Button>
+    </Grid>
 </UserControl>

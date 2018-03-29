@@ -31,10 +31,10 @@ namespace AutomatApp.MatFunctions
         }
     }
 
-    class MatManager
+    public class MatManager
     {
-        protected List<string> Files { get; set; }
-        protected List<string> MatPaths { get; set; }
+        public List<string> Files { get; set; }
+        public List<string> MatPaths { get; set; }
         public int SizeMatPaths { get { return MatPaths.Count; } }
         public int SizeFilePaths { get { return Files.Count; } }
 
@@ -43,6 +43,38 @@ namespace AutomatApp.MatFunctions
         {
             Files = new List<string>();
             MatPaths = new List<string>();
+        }
+
+        public void MoveMatFiles()
+        {
+            int counterFound = 0;
+            int counterNFound = 0;
+            foreach (string file in MatPaths)
+            {
+                string root = "C:/Users/Engineer/Documents/Nico/automat project/automat_application/test_data/3";
+                string export = "C:/Users/Engineer/Documents/Nico/automat project/automat_application/test_data/3/export";
+                string path = root + file;
+                path = path.Replace('/', '\\');
+                Console.WriteLine(path);
+                if (!File.Exists(@path))
+                {
+                    ++counterNFound;
+                }
+                else
+                {
+                    ++counterFound;
+                    string createPath = export + file;
+                    string fileName = createPath.Substring(createPath.LastIndexOf("/"));
+
+                    createPath = createPath.Substring(0, createPath.LastIndexOf("/") + 1);
+                    DirectoryInfo di = Directory.CreateDirectory(createPath);
+                    File.Copy(path, createPath + fileName, true);
+                }
+            }
+
+            Console.WriteLine("Found: {0}", counterFound);
+            Console.WriteLine("Not Found: {0}", counterNFound);
+            Console.WriteLine("Total: {0}", MatPaths.Count);
         }
 
         public void Execute()
@@ -57,35 +89,6 @@ namespace AutomatApp.MatFunctions
             //{
             //    Console.WriteLine(i);
             //}
-
-            int counterFound = 0;
-            int counterNFound = 0;
-            foreach (string file in MatPaths)
-            {
-                string root = "C:/Users/Engineer/Documents/Nico/automat project/automat_application/test_data/3";
-                string export = "C:/Users/Engineer/Documents/Nico/automat project/automat_application/test_data/3/export";
-                string path = root + file;
-                path = path.Replace('/','\\');
-                Console.WriteLine(path);
-                if (!File.Exists(@path))
-                {
-                    ++counterNFound;
-                }
-                else
-                {
-                    ++counterFound;
-                    string createPath = export + file;
-                   string fileName = createPath.Substring(createPath.LastIndexOf("/"));
-
-                    createPath = createPath.Substring(0, createPath.LastIndexOf("/") + 1);
-                    DirectoryInfo di = Directory.CreateDirectory(createPath);
-                    File.Copy(path,createPath + fileName,true);
-                }
-            }
-
-            Console.WriteLine("Found: {0}" , counterFound);
-            Console.WriteLine("Not Found: {0}", counterNFound);
-            Console.WriteLine("Total: {0}", MatPaths.Count);
         }
 
     }
